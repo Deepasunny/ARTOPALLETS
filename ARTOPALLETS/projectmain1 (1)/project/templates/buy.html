@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ 
+h2{
+  text-align: center;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px ;
+}
+.row{
+  display:flex;
+}
+.a{
+  padding:16px 16px ;
+}
+
+</style>
+</head>
+
+
+<h2><b>BUY</b></h2>
+
+<body>
+  <div class="row">
+    <div class="column">
+      <div class="a">
+      <img src="https://blog.artweb.com/wp-content/uploads/2022/12/Van-Gogh-Starry-Night.jpg" alt="Snow" style="width: 100%" >
+      <h4><b>art1</b></h4> 
+    <p>price -Rs12000</p> 
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'payment' %}">Buy</a>
+    </div> </div>
+    <div class="column">
+      <img src="https://www.art2arts.co.uk/media/wysiwyg/seascapes.jpg" alt="Forest" style="width:100%">
+      <h4><b>art2</b></h4> 
+    <p>price -Rs2000</p> 
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'payment' %}">Buy</a>
+    </div>
+    <div class="column">
+      <img src="https://cdn.pixabay.com/photo/2016/12/15/20/21/texture-1909992_1280.jpg" alt="Mountains" style="width:100%">
+   <h4><b>art3</b></h4> 
+    <p>price -Rs1000</p> 
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'payment' %}">Buy</a>
+    </div>
+ </div>
+</body>
+</html> 
+
+{% endblock %}

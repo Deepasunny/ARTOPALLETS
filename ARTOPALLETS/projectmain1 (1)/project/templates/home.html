@@ -1,0 +1,268 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<section class="banner_main">
+    <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="carousel-caption relative">
+                        <div class="row">
+                            <div class="col-md-7 offset-md-5">
+                                <div class="text-bg">
+                                    <h1> Pallettes<br>to the world of arts</h1>
+                                    <span>Lets be crafty,lets be creative</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="carousel-caption relative">
+                        <div class="row">
+                            <div class="col-md-7 offset-md-5">
+                                <div class="text-bg">
+                                    <h1> Enhance<br>your vision</h1>
+                                    <span>There is no must in art,because art is free</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="carousel-caption relative">
+                        <div class="row">
+                            <div class="col-md-7 offset-md-5">
+                                <div class="text-bg">
+                                    <h1> Creativity <br>takes courages</h1>
+                                    <span>The way to get started is to quit talking and begin doing </span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<!-- end banner -->
+<!-- about -->
+<div id="about" class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="titlepage">
+                    <h2>About <span class="green">Us</span></h2>
+                    <p>We are able to reduce the difficulties faced by artists and customers in the field of art by implementing as user friendly,
+                         flexible and reliable and in future it will make a great changes all over world</p>
+                    
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="about_img">
+                    <figure><img src="{% static 'images/about.jpeg' %}" alt="#"/></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end about -->
+<!--  service -->
+<div id="service" class="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage">
+                    <h2>Our <span class="green">Services</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service_box">
+                            <i><img src="{% static 'images/service1.jpeg' %}" alt="#"/></i>
+                            <h3>Customization</h3>
+                            <p><br></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 offset-md-3 col-sm-6 mar_top">
+                        <div class="service_box">
+                            <i><img src="{% static 'images/service2.jpeg' %}" alt="#"/></i>
+                           <h3>Tutorial Sessions</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 offset-md-1 col-sm-6 mar_top">
+                        <div class="service_box">
+                            <i><img src="{% static 'images/service4.jpeg' %}" alt="#"/></i>
+                        
+                            <h3>Home Delivery</h3>
+                            <p><br></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end service -->
+<!-- gallery -->
+<div id="gallery" class="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage">
+                    <h2>Our <span class="green">gallery</span></h2>
+                    <p>here are many varieties of paintings and craft items that you want</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_text">
+                    <div class="galleryh3">
+                        <h3>Dream Catcher</h3>
+                        <p> In dreams we enter<br>
+                            a world that is   <br>
+                            entirely our own<br>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_img">
+                    <figure><img src="{% static 'images/gallery1.jpeg' %}" alt="#"/></figure>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_img">
+                    <figure><img src="{% static 'images/gallery2.jpeg' %}" alt="#"/></figure>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_img">
+                    <figure><img src="{% static 'images/gallery3.jpeg' %}" alt="#"/></figure>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_img">
+                    <figure><img src="{% static 'images/gallery4.jpeg' %}" alt="#"/></figure>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_text">
+                    <div class="galleryh3">
+                        <h3>Bottle Art</h3>
+                        <p>We found that we could say   <br>
+                             things with colors and shapes<br>
+                            that we couldn't say any other way<br>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_text">
+                    <div class="galleryh3">
+                        <h3>Paintings</h3>
+                        <p>The aim of art is not to<br>
+                           represent the outward appearance of things,<br>
+                             but their inward significance <br>
+                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_img">
+                    <figure><img src="{% static 'images/gallery5.jpeg' %}" alt="#"/></figure>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_img">
+                    <figure><img src="{% static 'images/gallery6.jpeg' %}" alt="#"/></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end gallery -->
+<!-- testimonial -->
+
+<!-- end design -->
+
+<!--  footer -->
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-3 col-sm-6">
+                    <ul class="social_icon">
+                        <li><a href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C589460569852%7Cb%7Cfacebook%20%27%7C&placement=&creative=589460569852&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D9149210%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw-IWkBhBTEiwA2exyO4O725lLu0M3UWSAzx-fW1J-BDcLa2bNnbe1kOk7EnB_BwSoJviCHBoCRqEQAvD_BwE"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://in.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <p class="variat pad_roght2">Connect with us.......
+                    </p>
+                </div>
+                <div class=" col-md-3 col-sm-6">
+                    <h3>LET US HELP YOU</h3>
+                    <p class="variat pad_roght2">Impress your dear ones with colorful surprises. . . . . . . . . .
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h3>INFORMATION</h3>
+                    <ul class="link_menu">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}"> About</a></li>
+                        <li><a href="{% url 'buy' %}">Buy</a></li>
+                        <li><a href="{% url 'services' %}">Services</a></li>
+                        <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                        <li><a href="mailto:artopalletes@gmail.com">Contact Us</a></li>
+
+                    </ul>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <p>© 2023 All Rights Reserved. Design by <a href="https://html.design/"> Arto Palletes</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+{% endblock %}

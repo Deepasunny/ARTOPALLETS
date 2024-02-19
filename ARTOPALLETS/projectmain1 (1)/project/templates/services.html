@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<!--  service -->
+<div id="service" class="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage">
+                    <h2>Our <span class="green">Services</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service_box">
+                            <i><img src="{% static 'images/service1.jpeg' %}" alt="#"/></i>
+                            <h3><li class="nav-item">
+                                <a class="nav-link" href="{% url 'customization' %}">Customization</a>
+                            </li></a></h3>
+                            
+                            <p><br></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 offset-md-3 col-sm-6 mar_top">
+                        <div class="service_box">
+                            <i><img src="{% static 'images/service2.jpeg' %}" alt="#"/></i>
+                            <h3><a class="nav-link" href="https://www.youtube.com/@DIYCraftTutorials">Tutorial Sessions</a></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 offset-md-1 col-sm-6 mar_top">
+                        <div class="service_box">
+                            <i><img src="{% static 'images/service4.jpeg' %}" alt="#"/></i>
+                           
+                            <h3>Home Delivery</h3>
+                            <p><br></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end service -->
+{% endblock %}

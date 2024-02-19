@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<!-- gallery -->
+<div id="gallery" class="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage">
+                    <h2>Our <span class="green">gallery</span></h2>
+                    <p>here are many varieties of paintings and craft items that you want</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_text">
+                    <div class="galleryh3">
+                        <h3>Dream Catcher</h3>
+                        <p> In dreams we enter<br>
+                            a world that is   <br>
+                            entirely our own<br>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_img">
+                    <figure><img src="{% static 'images/gallery1.jpeg' %}" alt="#"/></figure>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_img">
+                    <figure><img src="{% static 'images/gallery2.jpeg' %}" alt="#"/></figure>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_img">
+                    <figure><img src="{% static 'images/gallery3.jpeg' %}" alt="#"/></figure>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_img">
+                    <figure><img src="{% static 'images/gallery4.jpeg' %}" alt="#"/></figure>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_text">
+                    <div class="galleryh3">
+                        <h3>Bottle Art</h3>
+                        <p>We found that we could say   <br>
+                             things with colors and shapes<br>
+                            that we couldn't say any other way<br>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_text">
+                    <div class="galleryh3">
+                        <h3>Paintings</h3>
+                        <p>The aim of art is not to<br>
+                           represent the outward appearance of things,<br>
+                             but their inward significance <br>
+                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_img">
+                    <figure><img src="{% static 'images/gallery5.jpeg' %}" alt="#"/></figure>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="gallery_img">
+                    <figure><img src="{% static 'images/gallery6.jpeg' %}" alt="#"/></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end gallery -->
+
+{% endblock %}

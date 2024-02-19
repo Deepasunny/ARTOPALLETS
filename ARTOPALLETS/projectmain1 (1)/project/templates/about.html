@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<!-- about -->
+<div id="about" class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="titlepage">
+                    <h2>About <span class="green">Us</span></h2>
+                    <p>We are able to reduce the difficulties faced by artists and customers in the field of art by implementing as user friendly,
+                         flexible and reliable and in future it will make a great changes all over world</p>
+                    
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="about_img">
+                    <figure><img src="{% static 'images/about.jpeg' %}" alt="#"/></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end about -->
+{% endblock %}

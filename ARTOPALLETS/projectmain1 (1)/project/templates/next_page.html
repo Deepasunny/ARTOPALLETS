@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Next Page</title>
+</head>
+<body>
+    <h1>Next Page</h1>
+    {% if payment_status == 'success' %}
+        <p>The payment is successful</p>
+    {% endif %}
+</body>
+</html>
+{% endblock %}

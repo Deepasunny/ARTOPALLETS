@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<div id="contact" class="contact" style="margin-top: 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titlepage text-center">
+                    <h2>Register</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <form id="request" class="main_form" method="post" action="{% url 'register' %}">
+                    {% csrf_token %}
+                    <div class="row">
+                        {% for field in form %}
+                        <div class="col-md-12">
+                            <small class="text-danger">{{ field.errors|striptags }}</small>
+                            {{ field }}
+                        </div>
+                        {% endfor %}
+                        <div class="col-md-12">
+                            <button class="send_btn" type="submit">Register</button>
+                        </div>
+                    </div>
+                    {% if form.non_field_errors %}
+                    {% for error in form.non_field_errors %}
+                    <p class="alert alert-danger alert-dismissible fade show" role="alert">
+                        {{error}}
+                    </p>
+                    {% endfor %}
+                    {% endif %}
+                </form>
+                <div class="text-white">
+                    Already have an account? <a href="{% url 'login' %}"><u>Log In</u></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
